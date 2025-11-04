@@ -125,20 +125,3 @@ git clone https://github.com/seu-usuario/telecom-churn-analysis.git
 jupyter notebook telecom_churn_analysis.ipynb
 ```
 
-### Estrutura de Arquivos
-```
-telecom-churn-analysis/
-├── data/
-│   └── telecom_dataset.csv
-├── notebooks/
-│   └── telecom_churn_analysis.ipynb
-├── reports/
-│   └── churn_analysis_report.pdf
-├── README.md
-└── requirements.txt
-```
-
-## Referências
-- Dataset: Base interna da Telecom X (2025)
-- Bibliotecas Python: pandas, seaborn, matplotlib
-- Referências metodológicas: CRISP-DM, Análise Exploratória de Dados (EDA)
