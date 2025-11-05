@@ -7,6 +7,12 @@
 
 ---
 
+## 🧰 Tecnologias
+- Python (pandas, numpy, matplotlib, seaborn, scikit-learn)
+- Jupyter Notebook
+
+---
+
 ## O que é Churn?
 &nbsp;&nbsp;&nbsp;&nbsp;O termo **churn** (ou **churn rate**) refere-se à **taxa de evasão de clientes**, ou seja, **a proporção de clientes que deixam de utilizar os serviços de uma empresa em determinado período**.  
 
