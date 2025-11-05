@@ -8,7 +8,7 @@
 ---
 
 ## 🧰 Tecnologias
-- Python (pandas, numpy, matplotlib, seaborn, scikit-learn)
+- Python (pandas, numpy, matplotlib, seaborn)
 - Jupyter Notebook
 
 ---
