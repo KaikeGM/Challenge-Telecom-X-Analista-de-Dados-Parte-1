@@ -29,7 +29,10 @@
 
 ### 1. Distribuição de Churn
 - **25,4%** dos clientes cancelaram o serviço.  
-- **74,6%** permanecem ativos.  
+- **74,6%** permanecem ativos.
+
+![Gráfico de churn por tipo de contrato](gráfico/churn_distribution.png)
+
    *A taxa está dentro do esperado, mas ainda representa uma perda significativa de receita.*
 
 ---
@@ -41,7 +44,9 @@
 |------------------|----------------|
 | Mensal | **41,0%** |
 | Anual | 10,9% |
-| Bianual | 2,8% |
+| Bianual | 2,6% |
+
+![Gráfico de churn por tipo de contrato](gráfico/churn_contrato.png)
 
 **Insight:**  
 &nbsp;&nbsp;&nbsp;&nbsp;Clientes com contratos de longo prazo têm **maior comprometimento e menor propensão ao cancelamento**.  
