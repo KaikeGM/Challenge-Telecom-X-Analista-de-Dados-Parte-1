@@ -1,127 +1,167 @@
-# Análise de Evasão de Clientes - Telecom X
+# Análise de Evasão de Clientes - **Telecom X**
 
 ## Descrição do Projeto
-Este projeto visa analisar os fatores que contribuem para a evasão de clientes (churn) na Telecom X. Através de análise exploratória de dados (EDA), identificamos padrões e características comuns entre os clientes que cancelam o serviço. Os insights gerados servirão de base para ações estratégicas de retenção de clientes.
+&nbsp;&nbsp;&nbsp;&nbsp;Este projeto tem como objetivo **analisar os fatores que influenciam a evasão de clientes (churn)** na **Telecom X**, identificando padrões comportamentais e variáveis-chave associadas ao cancelamento de serviços.  
+
+&nbsp;&nbsp;&nbsp;&nbsp;A partir de uma **análise exploratória de dados (EDA)**, foram identificadas **tendências, correlações e perfis de risco**, oferecendo **insights estratégicos** para aumentar a retenção e reduzir a taxa de churn.
+
+---
+
+## O que é Churn?
+&nbsp;&nbsp;&nbsp;&nbsp;O termo **churn** (ou **churn rate**) refere-se à **taxa de evasão de clientes**, ou seja, **a proporção de clientes que deixam de utilizar os serviços de uma empresa em determinado período**.  
+
+&nbsp;&nbsp;&nbsp;&nbsp;Em empresas de telecomunicações, o churn é um **indicador crítico de desempenho**, pois revela o nível de **satisfação, fidelização e competitividade** da base de clientes.  
+&nbsp;&nbsp;&nbsp;&nbsp;Um alto churn pode significar **problemas na qualidade do serviço, no suporte, nos preços ou nos planos oferecidos**, impactando diretamente a **receita recorrente** da empresa.
+
+---
 
 ## Contexto de Negócio
-A Telecom X enfrenta um alto índice de cancelamentos (churn) e precisa entender os motivos que levam os clientes a deixarem a empresa. A análise visa responder:
-- Quais características dos clientes estão mais associadas à evasão?
-- Quais serviços ou planos têm maior impacto na retenção?
-- Como fatores financeiros (mensalidade, gastos totais) se relacionam com o churn?
+&nbsp;&nbsp;&nbsp;&nbsp;A **Telecom X** enfrenta uma taxa de evasão de **25,4%**, dentro do intervalo típico do setor de telecomunicações (15%–30%).  
+&nbsp;&nbsp;&nbsp;&nbsp;O desafio é compreender:
+
+1. Quais características dos clientes estão mais associadas à evasão?  
+2. Quais serviços ou planos têm maior impacto na retenção?  
+3. Como fatores financeiros (mensalidade e gastos totais) se relacionam com o churn?
+
+---
 
 ## Principais Análises e Insights
 
 ### 1. Distribuição de Churn
-- **25.4%** dos clientes cancelaram o serviço
-- Clientes ativos representam **74.6%** da base
-- Taxa de evasão dentro do esperado para o setor (15-30%)
+- **25,4%** dos clientes cancelaram o serviço.  
+- **74,6%** permanecem ativos.  
+   *A taxa está dentro do esperado, mas ainda representa uma perda significativa de receita.*
 
-![Distribuição de Churn](baixados5.png)
+---
 
 ### 2. Fatores Críticos de Evasão
 
 #### a) Tipo de Contrato
-- **Contrato mensal**: 41.0% evasão
-- **Contrato anual**: 10.9% evasão
-- **Contrato bianual**: 2.8% evasão
+| Tipo de Contrato | Taxa de Evasão |
+|------------------|----------------|
+| Mensal | **41,0%** |
+| Anual | 10,9% |
+| Bianual | 2,8% |
 
-**Insight**: Contratos de longo prazo reduzem drasticamente a evasão.
+**Insight:**  
+&nbsp;&nbsp;&nbsp;&nbsp;Clientes com contratos de longo prazo têm **maior comprometimento e menor propensão ao cancelamento**.  
+ *Contratos mensais concentram a maioria das perdas.*
 
-![Evasão por Contrato](Captura%20de%20tela%202025-06-10%20191839.png)
+---
 
 #### b) Método de Pagamento
-- **Cheque eletrônico**: 43.2% evasão
-- **Cartão de crédito (automático)**: 14.8% evasão
+| Método | Evasão |
+|---------|--------|
+| Cheque eletrônico | **43,2%** |
+| Cartão de crédito (automático) | 14,8% |
 
-**Insight**: Pagamentos automáticos reduzem a evasão em mais de 60%.
+**Insight:**  
+&nbsp;&nbsp;&nbsp;&nbsp;Pagamentos automáticos estão fortemente associados à **retenção de clientes**, reduzindo a evasão em mais de **60%**.
+
+---
 
 #### c) Serviços Adicionais
-- **Sem segurança online**: 40.0% evasão
-- **Com segurança online**: 14.2% evasão
-- **Sem suporte técnico**: 39.8% evasão
-- **Com suporte técnico**: 14.7% evasão
+| Serviço | Evasão Sem Serviço | Evasão Com Serviço |
+|----------|--------------------|--------------------|
+| Segurança Online | 40,0% | **14,2%** |
+| Suporte Técnico | 39,8% | **14,7%** |
 
-**Insight**: Serviços adicionais são fortes fatores de proteção contra evasão.
+**Insight:**  
+&nbsp;&nbsp;&nbsp;&nbsp;A adesão a **serviços adicionais** (como segurança online e suporte técnico) é um dos **principais fatores de proteção** contra churn.
 
-![Evasão por Suporte Técnico](Captura%20de%20tela%202025-06-10%20191720.png)
+---
 
 ### 3. Análise Financeira
 
 #### a) Gastos Mensais
-- Clientes que evadem: **R$74.93** (média)
-- Clientes ativos: **R$61.57** (média)
-- Diferença: **21.7% mais alto** para quem cancela
+| Grupo | Média (R$) |
+|--------|-------------|
+| Clientes que evadem | **74,93** |
+| Clientes ativos | 61,57 |
 
-**Insight**: Mensalidades mais altas estão associadas a maior risco de evasão.
+**Insight:**  
+&nbsp;&nbsp;&nbsp;&nbsp;Clientes com **mensalidades mais altas** têm **21,7% mais chance** de cancelar o serviço, possivelmente devido à **sensibilidade ao preço**.
 
-![Distribuição de Gastos Mensais](baixados3.png)
+---
 
 #### b) Gastos Totais
-- Clientes que evadem: **R$1,569.06** (média)
-- Clientes ativos: **R$2,554.50** (média)
-- Diferença: **38.6% menor** para quem cancela
+| Grupo | Média (R$) |
+|--------|-------------|
+| Clientes que evadem | **1.569,06** |
+| Clientes ativos | 2.554,50 |
 
-**Insight**: Clientes fiéis geram mais receita e têm menor propensão a cancelar.
+**Insight:**  
+&nbsp;&nbsp;&nbsp;&nbsp;Clientes com **histórico de maior gasto total** são **mais fiéis**, indicando **relações de longo prazo e maior valor para a empresa**.
 
-![Distribuição de Gastos Totais](baixados2.png)
+---
 
-### 4. Correlações Principais
-As variáveis mais correlacionadas com churn são:
-- **Positivo** (aumentam evasão):
-  - Pagamento por cheque eletrônico: 0.29
-  - Gastos mensais elevados: 0.19
-- **Negativo** (reduzem evasão):
-  - Contrato bianual: -0.29
-  - Serviços de segurança/suporte: -0.16
+### 4. Correlações com Churn
+| Variável | Correlação com Churn | Interpretação |
+|-----------|----------------------|----------------|
+| Pagamento por cheque eletrônico | **+29%** | Aumenta o risco de evasão |
+| Gastos mensais elevados | **+19%** | Aumenta o risco |
+| Contrato bianual | **−29%** | Reduz o risco |
+| Serviços de segurança/suporte | **−16%** | Reduz o risco |
 
-![Correlações com Evasão](baixados1.png)
+---
 
-## Conclusões e Recomendações
+##  Conclusões Gerais
+1. **Contratos mensais** representam o maior fator de risco para churn.  
+2. **Pagamentos não automáticos** (como cheque eletrônico) **dobram o risco** de cancelamento.  
+3. **Serviços adicionais** (segurança e suporte técnico) **aumentam a fidelização**.  
+4. **Clientes com mensalidades mais altas** e **baixo tempo de contrato** são o grupo mais vulnerável à evasão.
 
-### Principais Conclusões
-1. **Contratos mensais** são o maior fator de risco para evasão
-2. **Pagamentos não automáticos** (cheque eletrônico) dobram o risco de churn
-3. **Serviços adicionais** (segurança e suporte) são fortes fatores de proteção
-4. Clientes com **mensalidades altas** e **pouco tempo de contrato** são os mais propensos a cancelar
+---
 
-### Recomendações Estratégicas
-1. **Converter contratos mensais em anuais:**
-   - Oferecer desconto de 10-15% no primeiro ano
-   - Benefícios adicionais (ex: 3 meses grátis de streaming)
+##  Recomendações Estratégicas
 
-2. **Incentivar pagamentos automáticos:**
-   - Desconto de 5% para pagamentos automáticos
-   - Campanha de migração com suporte prioritário
+### 1. Converter contratos mensais em anuais
+- Descontos de **10–15% no primeiro ano**.  
+- Benefícios extras (ex: **3 meses de streaming grátis**).  
+- Programas de **upgrade automático** após 6 meses.
 
-3. **Promover pacotes de serviços adicionais:**
-   - Pacote "Segurança Total" (OnlineSecurity + TechSupport) por R$15/mês
-   - Teste gratuito por 30 dias
+### 2. Incentivar pagamentos automáticos
+- **Desconto de 5%** para adesão ao débito automático.  
+- Campanha de conscientização: “Automático é mais prático”.  
+- **Suporte prioritário** para clientes automáticos.
 
-4. **Programa de fidelidade para clientes de alto valor:**
-   - Benefícios progressivos para clientes com mensalidade > R$80
-   - Atendimento prioritário e descontos em serviços adicionais
+### 3. Promover pacotes de serviços adicionais
+- Criar o **pacote “Segurança Total”** (OnlineSecurity + TechSupport) por R$15/mês.  
+- **Teste gratuito de 30 dias** para novos assinantes.  
+- Bonificação de fidelidade para quem mantém o pacote por 12 meses.
 
-**Meta**: Reduzir a taxa de evasão em 30% nos próximos 12 meses
+### 4. Programa de fidelidade
+- Recompensar clientes com **mensalidade acima de R$80**.  
+- Benefícios progressivos: **descontos, atendimento VIP, upgrades de plano**.  
+- Objetivo: **reduzir churn em 30% nos próximos 12 meses.**
 
-## Como Reproduzir a Análise
+---
 
-### Pré-requisitos
-- Python 3.11+
-- Bibliotecas: pandas, numpy, matplotlib, seaborn
+##  Respostas às Perguntas de Negócio
 
-### Instalação
-```bash
-pip install pandas numpy matplotlib seaborn
-```
+### 1️ Quais características dos clientes estão mais associadas à evasão?
+- **Contratos mensais**,  
+- **Pagamentos via cheque eletrônico**,  
+- **Ausência de serviços adicionais** (como segurança ou suporte técnico),  
+- **Mensalidades altas com baixo engajamento**.  
 
-### Execução
-1. Clone o repositório:
-```bash
-git clone https://github.com/seu-usuario/telecom-churn-analysis.git
-```
+ *Esses fatores indicam baixa fidelização e sensibilidade a preço.*
 
-2. Execute o notebook Jupyter:
-```bash
-jupyter notebook telecom_churn_analysis.ipynb
-```
+---
 
+### 2️ Quais serviços ou planos têm maior impacto na retenção?
+- **Contratos de longo prazo (anual/bianual)** e  
+- **Serviços adicionais** (segurança online e suporte técnico)  
+têm o **maior impacto positivo** na retenção.  
+
+ *Esses clientes apresentam taxas de evasão até 70% menores.*
+
+---
+
+### 3️ Como fatores financeiros se relacionam com o churn?
+- **Mensalidades mais altas** estão associadas a **maior probabilidade de evasão**, sugerindo que o **custo** é um ponto sensível.  
+- **Gastos totais mais altos** refletem **clientes antigos e fiéis**, com **menor chance de cancelar**.  
+
+ *Ou seja, o valor mensal é um risco, mas o histórico de gasto total é um sinal de lealdade.*
+
+---
