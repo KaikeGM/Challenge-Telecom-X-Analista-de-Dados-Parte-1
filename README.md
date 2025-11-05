@@ -6,6 +6,9 @@
 &nbsp;&nbsp;&nbsp;&nbsp;A partir de uma **análise exploratória de dados (EDA)**, foram identificadas **tendências, correlações e perfis de risco**, oferecendo **insights estratégicos** para aumentar a retenção e reduzir a taxa de churn.
 
 ---
+### 🚀 Projetos em Destaque
+- [Criando um modelo de Machine learning para prever Churn](https://github.com/KaikeGM/Challenge-Telecom-X-Data-Science-Parte-2)
+---
 
 ## 🧰 Tecnologias
 - Python (pandas, numpy, matplotlib, seaborn)
