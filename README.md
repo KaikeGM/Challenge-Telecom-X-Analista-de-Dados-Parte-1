@@ -42,8 +42,8 @@
 #### a) Tipo de Contrato
 | Tipo de Contrato | Taxa de Evasão |
 |------------------|----------------|
-| Mensal | **41,0%** |
-| Anual | 10,9% |
+| Mensal | **88,3%** |
+| Anual | 9,1% |
 | Bianual | 2,6% |
 
 ![Gráfico de churn por tipo de contrato](gráfico/churn_contrato.png)
