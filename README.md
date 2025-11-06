@@ -66,9 +66,10 @@
 #### b) Método de Pagamento
 | Método | Evasão |
 |---------|--------|
-| Cheque eletrônico | **43,2%** |
-| Cartão de crédito (automático) | **14,8%** |
+| Cheque eletrônico | **43.2%** |
+| Cheque enviado pelo correio | **18.0%** |
 | Transferência bancária (automático) | **16.2%** |
+| Cartão de crédito (automático) | **14.8%** |
 
 **Insight:**  
 &nbsp;&nbsp;&nbsp;&nbsp;Pagamentos automáticos estão fortemente associados à **retenção de clientes**, reduzindo a evasão em mais de **74%**.
